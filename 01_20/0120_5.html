@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <form> 
+        <fieldset>
+            <legend>인적사항</legend>
+
+        <label for="name">이름</label>
+        <input type="text" id="name" required autofocus>
+    <br>
+
+        <label> 학년
+            <input type="radio" name="grade" id="1G" value="1" checked>
+            <label for="1G">1학년</label>
+                
+            <input type="radio" name="grade" id="2G" value="2">
+            <label for="2G">2학년</label>
+
+            <input type="radio" name="grade" id="3G" value="3">
+            <label for="3G">3학년</label>
+        </label>
+    <br>
+
+
+        <label for="birthday">생년월일</label>
+        <input type="date" id="birthday" required>
+    <br>
+
+
+        <label for="age">나이</label>
+        <input type="number" id="age" min="17" max="20"> 
+
+    </fieldset>
+
+    </form>    
+
+    <form>
+        <fieldset>
+            <legend>좋아하는 음식</legend>
+
+            <input type="checkbox" name="food" id="1" value="1">
+            <label for="1">돈까스 김밥</label>
+            
+            <input type="checkbox" name="food" id="2" value="2">
+            <label for="2">김밥</label>
+
+            <input type="checkbox" name="food" id="3" value="3">
+            <label for="3">치즈김밥</label>
+
+            <input type="checkbox" name="food" id="4" value="4">
+            <label for="4">참치김밥</label>
+
+        </fieldset>
+    </form>
+
+    <label for="food2">음료</label>
+    <select name="food2" id="food2">
+        <option value="1">물</option>
+        <option value="2">과일음료</option>
+        <option value="3">탄산음료</option>
+        <option value="4">해당없음</option>
+    </select>
+
+    <fieldset>
+        <legend>학과</legend>
+          <input type="text" value="스마트소프트웨어" required>
+         <br>
+         <textarea cols="30" rows="5" placeholder="학과소개"></textarea>
+    </fieldset>
+
+    <input type="submit">
+    <input type="reset">
+</body>
+</html>

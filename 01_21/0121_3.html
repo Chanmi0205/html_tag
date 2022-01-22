@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <!-- 내부 스타일 시트-->
+   
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+        /* id 지정자 */
+        #il {
+            color: yellow;
+        }
+        
+        /* 클래스 지정자 */
+        .San {
+            color: blue;
+        }
+        
+        /* 타입  지정자 */
+
+        p {
+            font-family: 'Hi Melody', cursive;
+            font-weight: inherit;
+            font-size: 45pt;
+            /* lighter : 100, 700 : bold, 900 : bolder */
+            font-style: italic;
+
+            color: lightblue;
+            /* color: #000;
+               color: rgb(150, 0, 150); */
+
+            /* 취소선
+            text-decoration: line-through; */
+           
+            /* 위에 선 긋기 
+            text-decoration: overline; */
+
+            /* 밑줄
+            text-decoration: underline; */
+
+            /* 문장의 높이와 단어의 간격 차이 
+            line-height : 100px; 
+            letter-spacing: 35px;  */ 
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- CSS ( Cassading Style Sheet ) -->
+    <!-- 태그명 { 스타일명:값; }-->
+
+    <p>상일미디어고<br>5개 학과</p>
+    <p class="San" id="il">Sangil</p>
+    <p class="soft" id="ware">스마트소프트웨어과</p>
+    <p class="inform" id="com">스마트정보통신과</p>
+    <p class="media" id="design">디지털미디어디자인과</p>
+    <p class="comic" id="movie">디지털만화영상과</p>
+    <p class="bio" id="food">바이오푸드과</p>
+
+</body>
+</html>

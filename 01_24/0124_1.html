@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 모델</title>
+
+    <!-- 내부 스타일 시트 -->
+    <style>
+ /*      p {
+            border: 2px solid;
+            background-color: ivory;
+            display: inline;
+            padding: 50px;
+            margin: 50px;  
+        }  */
+
+        div {
+
+            box-sizing: border-box;
+            width: 400px;
+            height: 400px;
+             border: 1px solid;
+             /* box-shadow : 수평거리(가로), 수직거리(세로), 흐림정도, 번짐, 색상 inset(박스 안쪽) */
+            box-shadow: 2px -2px 5px 0px lavender;
+           
+            /* 선 종류 지정 */
+            border-right-style: dotted;
+            border-left-style:  dashed;
+
+            /* border-radius : 원 만들기 */
+            border-radius: 50%;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+<!-- <p>상일미디어고등학교</p> -->  
+
+
+<!-- <div style="background-color: ivory;"></div> -->
+<!-- 속에 아무것도 없으면 화면상에 안뜸 띄우게 할려면 높이와 너비를 설정해줘야 함-->
+
+<div>
+
+</div>
+    
+</body>
+</html>

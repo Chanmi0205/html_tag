@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+
+    <style>
+
+        /* position 
+        - 1. static -> 위치변경X 
+        - 2. relative -> 위치변경 O, 기준 X
+        - 3. absolute -> 위치변경 O, 기준 필요(1, 부모 태그일 것, 2. 부모 position이 relative일 것)
+        - 4. fixed -> scoll해도 이동X */
+        
+        #container {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+            background-color: beige;
+        }
+
+        #text {
+            position: absolute;
+            background-color: mediumspringgreen;
+            top: 100px;
+            left: 100px;
+        }
+        
+        #grade {
+            position: absolute;
+            border: 2px dashed blue;
+            bottom: 100px;
+            right: 100px;
+        }
+
+        img {
+            position: fixed;
+            bottom: 50px;
+            right: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <p id="text">상일미디어고등학교</p>
+        <p id="grade">예비 2학년</p>
+        <img src="sjg.jpg" width="100px" height="100px">
+    </div>
+</body>
+</html>

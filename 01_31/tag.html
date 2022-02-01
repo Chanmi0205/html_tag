@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+
+        /* 밑줄 때문에 안 보이는 글씨가 안 보여서 밑줄 지움 */
+        a {
+            text-decoration-line: none;
+        }
+    </style>
+
+    <!-- 웹페이지의 제목을 나타내는 태그 -->
+    <title>타이틀 태그</title>
+</head>
+<body>
+    <form>
+
+    <!-- 문단을 만들 때 쓰는 태그 -->
+    <p>p태그</p>
+    
+    <!-- <hn> 태그 (주로 제목을 쓸 때 태그 )-->
+    <h2>h2태그</h2>
+
+    <p>strong태그 - <strong>strong태그</strong></p>
+    <!-- 강조하고 굵게 -> <stroug> 태그-->
+    <p>em 태그 - <em>em태그</em></p>
+    <!-- 강조하고 기울임 -> <em> 태그 -->
+
+
+    <p>b태그 - <b>b태그</b></p>
+    <!-- 강조 안 하고 서식 지정, 굵게 -> <b> 태그 -->
+    <p>i태그 - <i>i태그</i></p>
+    <!-- 강조 안 하고 서식 지정, 기울임 -> <i> 태그 -->
+
+
+    <!-- 위 첨자(sup), 아래 첨자(sub) -->
+    <p> 위 <sup>첨자</sup> </p>    
+    <P> 아래 <sub>첨자</sub> </P>
+
+<!--    ex)
+        <p> 4 <sup>2</sup> </p>    
+        <P> H <sub>2</sub> O </p>
+-->   
+   
+    <!-- <hr> 태그 - 수평선 긋기 -->    
+    <hr>  
+
+     <!-- 순서 있는 목록 -->
+     <fieldset>
+         <legend>순서 있는 목록</legend>
+       
+         <ol>
+            <li>항목1</li>
+            <li>항목2</li>
+            <li>항목3</li>
+        </ol>
+
+     </fieldset>
+
+
+    <!-- 순서 없는 목록 -->
+    <fieldset>
+        <legend>순서 없는 목록</legend>
+        
+        <ul>
+            <li>항목1</li>
+            <li>항목2</li>
+            <li>항목3</li>
+        </ul>
+
+    </fieldset>
+
+
+    <!-- 설명 목록 -->
+    <fieldset>
+        <legend>설명 목록</legend>
+        
+        <dl>
+            <dt>우두머리</dt>
+    
+                <dd>따가리1</dd>
+                <dd>따가리2</dd>
+                <dd>따가리3</dd>
+                <dd>따가리4</dd>
+                <dd>따가리5</dd>
+    
+        
+         </dl>
+    </fieldset>
+
+
+    <!-- <a>태그 - 외부 파일이나 링크로 이동할 때 쓰는 태그  -->
+    
+    <!-- target="_blank" : 새로운 창에서 오픈함 -->
+    <a href="https://github.com/Chanmi0205" target="_blank">a태그와 _blank(_blank는 새로운 창에서 오픈함)</a>
+    
+    <br>
+    
+    <!-- target="_self" : 현재 창에서 외부 링크로 이동함 -->
+    <a href="https://github.com/rex0412" target="_self">a태그와 _self(_self는 현재 창에서 외부 링크로 이동함)</a>
+
+    <!-- <br> 태그 : Enter 역할하는 태그 -->
+    <br>
+
+    <!-- input 태그 -->
+
+    <fieldset>
+        <legend> input 태그 </legend>
+    
+
+      <!-- 텍스트 필드 -->
+      <p>텍스트 필드(readonly 속성은 이미 값이 들어가져있는 텍스트를 변경할 수 없는 입력창)</p>
+      <input type="text" value="readonly 속성" readonly>
+      <br>
+      
+      <!-- 비밀번호 필드--> 
+      <p>비밀번호 필드</p>
+      <input type="password"> 
+      <br>
+     
+      <!-- 검색 필드-->
+      <p>검색 필드</p>
+      <input type="search">
+      <br>
+
+      <!-- 주소 필드 -->
+      <p>주소 필드</p>
+      <input type="url">
+      <br>
+
+      <!-- 이메일 필드 -->
+      <!-- input의 required 속성 : 필수 입력창 -->
+      <p>이메일 필드(input의 required 속성 : 필수 입력창)</p>
+      <input type="email" required>
+      <br>
+      
+      <!-- 전화번호 필드 -->
+      <p>전화번호 필드</p>
+      <input type="tel">
+      <br>
+      <br>
+
+      <!-- 체크 박스, 중복 가능 -->
+      <p>체크박스</p>
+      <input type="checkbox" id="check">
+      <label for="check">체크박스</label>
+      <br>
+      <br>
+
+      <!-- 라디오 버튼, 중복 불가능 -->
+      <p>라디오 버튼</p>
+      <input type="radio" id="radio">
+      <label for="radio">라디오</label>
+      <br>
+      <br>
+
+      <!-- 파일 첨부 -->
+      <p>파일 첨부</p>
+      <input type="file">
+      <br>
+      <br>
+
+      <!-- 날짜 -->
+      <p>날짜</p>
+      <input type="date">
+      <br>
+      <br>
+
+      <!-- 숫자 -->
+      <p>숫자</p>
+      <input type="number">
+      <br>
+      <br>
+
+      
+      <!-- 제출 버튼 -->
+      <p>제출 버튼</p>
+      <input type="submit">
+      <br>
+      <br>
+
+      <!-- 리셋 -->
+      <p>리셋</p>
+      <input type="reset">
+
+    </fieldset>
+    </form>
+</body>
+</html>

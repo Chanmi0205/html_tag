@@ -1,0 +1,24 @@
+<!-- setTimeout( code, millisec(함수를 호출하기 전에 흘러야 하는 시간)) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review6</title>  
+
+    <script>
+
+        function showAlert() {
+            setTimeout(function () { alert("setTimeout()을 사용하여 표시됩니다.")}, 3000);
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <p>버튼을 누르면 3초 후에 경고 박스가 화면에 표시됩니다.</p>
+    <button onclick="showAlert()">눌러보세요.</button>
+
+</body>
+</html>

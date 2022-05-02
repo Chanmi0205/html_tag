@@ -1,0 +1,56 @@
+<!-- 숫자 알아 맞추기 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review9</title>
+
+    <script>
+
+        let computerNumber = 53;
+        let nGuesses = 0;
+
+        function guess() {
+            let result = "";
+
+            // 사용자가 입력한 값을 받아서 number에 대입한다.
+            let number = parseInt(document.getElementById("user").value);
+            nGuesses++;
+
+            // 연속적인 if-else문을 사용한다.
+            if ( number == computerNumber) result = "성공입니다.";
+            else if ( number < computerNumber ) result = "낮습니다.";
+            else result = "높습니다.";
+            
+            document.getElementById("result").value = result;
+            document.getElementById("guesses").value = nGuesses;
+            return ture;
+
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <h2> 숫자 맞추기 게임 </h2>
+    <p> 이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다. <br> 숫자는 1부터 100 사이에 있습니다. </p>
+
+    <form>
+        
+        <p> 숫자 : </p>
+        <input type="text" id="user" size="5">
+        <input type="button" value="확인" onclick="guess()"> 
+        <!-- onclick="guess();" <- 버튼을 클릭하면 guess()가 호출된다.-->
+
+        <p> 추측횟수 : </p>
+        <input type="text" id="guesses" size="5">
+
+        <p> 힌트 : </p>
+        <input type="text" id="result" size="16">
+
+    </form>
+
+</body>
+</html>

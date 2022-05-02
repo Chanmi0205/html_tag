@@ -1,0 +1,28 @@
+<!-- 동적 텍스트 추가 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review4</title>
+
+    <script>
+
+        function addtext(t) {
+
+            // createTextNode <- 이 기능이 지원되는지 검사함.
+            if (document.createTextNode) {
+                let node = document.createTextNode(t);  // 노드 생성
+                document.getElementById("target").appendChild(node); // 노드 추가
+            }
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <div id="target" onclick="addtext('동적으로 텍스트가 추가됩니다.')" style="font: 20px bold;">여기를 클릭하세요.</div>
+    
+</body>
+</html>

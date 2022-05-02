@@ -1,0 +1,37 @@
+<!-- 논리 연산자 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review5</title>
+
+    <script>
+        
+        /* function <- 함수 */
+        function calc() {
+
+            let x = document.getElementById("x").value; /* id가 x인 요소의 값을 가져옴 */ 
+            let y = document.getElementById("y").value; /* id가 y인 요소의 값을 가져옴 */
+            let sum;
+
+        sum = parseInt(x) + parseInt(y);  /* 문자열 -> 정수 */
+        document.getElementById("sum").value = sum; /* id가 sum인 요소에 변수 sum의 값을 대입함. */
+        
+        }
+
+    </script>
+
+    <h3>덧셈 계산기</h3>
+    <form name="myform" action="..." method="POST">
+        첫 번째 정수 : <input id="x"> <br>
+        두 번째 정수 : <input id="y"> <br>
+        합계 :         <input id="sum"> <br>
+        <input type="button" value="계산" onclick="calc();"> <!-- onclick <- 버튼을 클릭하면 calc()라는 함수 호출.
+                                                                    호출한다는 것은 함수를 불러서 실행한다는 의미이다. -->
+    </form>
+    
+</head>
+<body>
+</body>
+</html>

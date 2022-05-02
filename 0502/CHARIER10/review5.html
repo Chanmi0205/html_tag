@@ -1,0 +1,30 @@
+<!-- 기존의 HTML 요소 삭제 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review5</title>
+
+    <script>
+
+        function removeNode() {
+            let parent = document.getElementById('target'); // 부모노드 찾는다.
+            let child = document.getElementById('p1'); // 자식 노드를 찾는다.
+            parent.removeChild(child); // 부모 누드를 통하여 자식 노드를 삭제한다.
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <div id="target">
+        <p id="p1">첫 번째 단락</p>
+        <p id="p2">두 번째 단락</p>
+    </div>
+
+    <button onclick="removeNode()">누르세요!</button>
+
+</body>
+</html>

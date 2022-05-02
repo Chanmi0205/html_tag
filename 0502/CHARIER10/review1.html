@@ -1,0 +1,28 @@
+<!-- 요소 속성 변경하기 -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>review1</title>
+    
+        <script>
+    
+            function changeImage() {
+
+                // id가 image인 요소의 src속성을 변경함.
+                document.getElementById("image").src = "ImgFile/img_ex_1.jpg";
+                
+            }
+    
+        </script>
+        
+    </head>
+    <body>
+    
+        <img src="ImgFile/img_ex_2.jpg" id="image">
+
+        <input type="button" onclick="changeImage()" value="눌러보세요">
+
+    </body>
+    </html>

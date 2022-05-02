@@ -1,0 +1,27 @@
+<!-- onmousedown, onmouseup, onclick 이벤트 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review13</title>  
+
+    <script>
+
+        function OnButtonDown(button) {
+            button.style.color = "#ff0000";
+        }
+
+        function OnButtomUp(button) {
+            button.style.color = "#000000"
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <button onmousedown="OnButtonDown(this)" onmouseup="OnButttonUp (this)">눌러보세요.</button>
+
+</body>
+</html>

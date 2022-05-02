@@ -1,0 +1,26 @@
+<!-- 요소 속성 변경하기 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review2</title>
+
+    <script>
+
+        // id가 p1인 요소의 CSS 속성을 변경함.
+        function changeStyle() {
+            document.getElementById("p1").style.color = "red";
+            document.getElementById("p1").style.fontFamily = "Century Schoolbook";
+            document.getElementById("p1").style.fontSize = "italic";
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <p id="p1">This is a paragraph.</p>
+    <input type="button" onclick="changeStyle()", value="눌러보세요!">
+</body>
+</html>

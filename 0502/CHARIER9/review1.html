@@ -1,0 +1,47 @@
+<!-- 객체 종류
+    1. 내장 객체(built-in object) : 생성자가 미리 작성되어 있다.
+    2. 사용자 정의 객체(custom object) : 사용자가 생성자를 정의한다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review1</title>
+
+    <script>
+
+        // 생성자 정의
+        function Car(model, speed, color) {
+            
+            this.model = model;
+            this.speed = speed;
+            this.color = color;
+
+            this.brake = function() {
+                this.speed -= 10;
+            }
+            
+            this.accel = function() {
+            this.speed += 10;
+            }
+        }
+
+        // 객체 생성
+        myCar = new Car("520d", 60, "red");
+
+        // 객체의 멤버를 사용
+        document.write("모델 : " + myCar.model + ", 속도 : " +  myCar.speed + "<br>");
+        myCar.accel();
+        document.write("모델 : " + myCar.model + ", 속도 : " +  myCar.speed + "<br>");
+        myCar.brake();
+        document.write("모델 : " + myCar.model + ", 속도 : " +  myCar.speed + "<br>");
+
+    </script>
+    
+</head>
+<body>
+
+    
+
+</body>
+</html>

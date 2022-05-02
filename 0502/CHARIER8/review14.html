@@ -1,0 +1,31 @@
+<!-- 배열 활용 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review14</title>
+
+    <script>
+
+        function init() {
+            for ( let i=0; i<3; i++ ) {
+                document.myForm["a" + i].value = i; 
+                // HTML 요소의 읆은 키와 같다. 따라서 연관 배열 형식으로 접근할 수 있다. 빈벅힐 때 유용하게 사용된다. 
+            }
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <form name="myForm">
+        <p>필드1 </p> <input type="text" name="a0"> 
+        <p>필드2 </p> <input type="text" name="a1"> 
+        <p>필드3 </p> <input type="text" name="a2"> <br> <br>
+        <input type="button" value="초기화" onclick="init()">
+    </form>
+    
+</body>
+</html>

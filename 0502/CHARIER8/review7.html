@@ -1,0 +1,35 @@
+<!-- 조건문 if문 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>review7</title>
+
+    <script>
+
+        let msg = "";
+        let time = new Date().getHours();
+        /* getHours() <- 웹브라우저의 현재 시간을 알 수 있는 함수 */
+
+        if ( time < 12 ) {
+            msg = "Good Morning";
+        }
+
+        else if ( time < 18 ) {
+            msg = "Good Afternnon";
+        }
+
+        else {
+            msg = "Good evening";
+        }
+
+        alert(msg);
+
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>

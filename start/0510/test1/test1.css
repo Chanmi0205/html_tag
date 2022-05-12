@@ -1,0 +1,38 @@
+img {
+    width: 15px;
+    height: 15px;
+}
+
+ul, li {
+    list-style: none;
+    list-style-type: none;
+    float: left;
+}
+
+a, button {
+    color: blue;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+button {
+    background-color: white;
+    border: 0.5px solid gray;
+    height: 35px;
+    width: 35px;
+}
+
+#text {
+    color: gray;
+}
+
+#link1 {
+    color: gray;
+}
+
+
+#link1, #link2 {
+    border: 0.5px solid gray;
+}

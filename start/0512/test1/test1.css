@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* 각각의 요소, 각각의 줄에 대한 기준 */
+/*    align-items: center;  */
+
+    /*회색 영역 전체 기준 */
+    align-content: center;
+ 
+    /*   justify-content: center; */
+}
+
+.child {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+ /*   border: 1px solid white; */
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.bule {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+/* flexbox 
+    사용방법 : 
+    1. flexbox 쓰겠다고 선언
+    2. 가로 정렬 / 세로 정렬 선택
+    3. 무조건 한 줄 안에 다 정렬할지 / 여러 줄을 사용할지
+    4. 1~3번 과정을 이용하여 flexbox 파티하기 
+    
+    - 내가 정렬하고자 하는 요소를 감싸고 있는 부모 요소에게 display : flex 해주면 사용 가능 
+    부모 { display : flex; } 
+    
+    flex-direction : row(가로) / column(세로) 
+    
+    flex-wrap : nawrap 요소 사용
+    감싸지 않고 자식의 사이즈를 줄여서라도 한줄로 정리해 버리는 옵션!
+    
+    부모 요소에 width은 600으로 주고 자식 요소에 300을 줘도
+    flex-wrap : nawrap 요소를 사용한다면 
+    부모 { display : flex; flex-wrap : nawrap }
+    
+    justify-content : flex-start  | flex-end | center | space-between | space-around
+    */

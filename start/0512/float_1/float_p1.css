@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type : none;
+}
+
+li {
+  margin-right: 16px;
+}
+
+.main {
+  display: flex;
+}
+
+li a {
+  padding: 16px 20px;
+  display: block;
+}
+
+a:hover {
+  border-bottom: 2px solid dodgerblue;
+  color: dodgerblue;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 480px;
+    height: 480px;
+    background-color: aquamarine;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+/* 중앙정렬 
+    margin : 0 auto; 
+    
+    HTML5의 블록요소 종류
+    : address, article, aside, audio, div, blockquote, ol, ul, h1~h6, p
+    */

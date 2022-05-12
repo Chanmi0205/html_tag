@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  color: #273444;
+  background-color: #8492a6;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3333333333;
+}
+
+.profile-location {
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #8492a6;
+  margin-bottom: 15px;
+}
+
+.profile-detail dt {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6666666667;
+  color: #8492a6;
+}
+
+.profile-detail dd {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #0066ff;
+}
+
+.profile-image {
+  margin: 0 auto;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile {
+  border-radius: 10%;
+  padding: 32px 40px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  display : flex;
+  flex-direction: column;
+}
+
+.profile-detail {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.profile-detail-item {
+    margin: 0px 32px;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */

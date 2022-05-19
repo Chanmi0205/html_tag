@@ -1,0 +1,11 @@
+h3 {
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.clicked {
+    color: red;
+}

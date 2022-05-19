@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+}
+
+.tab-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.tab-menu-item {
+    margin-right: 16px;
+}
+
+.tab-menu-item a {
+    padding: 16px 20px; 
+    display: block;
+}
+
+.tab-menu-item.active {
+    border-bottom: 3px solid blue;
+}
+
+.tab-menu-item.active a {
+    color: blue;
+}
